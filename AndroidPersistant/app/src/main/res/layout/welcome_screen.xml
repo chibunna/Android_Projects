@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:gravity="center_horizontal" android:text="@string/welcome_label" android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_width="fill_parent"></TextView>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:gravity="bottom|center_horizontal" android:layout_height="fill_parent">
+        <Button android:id="@+id/buttonEnter" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/enter_label"></Button>
+        <Button android:id="@+id/buttonList" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/list_records_label"></Button>
+        <Button android:id="@+id/buttonDelete" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/delete_label"></Button>
+    </LinearLayout>
+    
+</LinearLayout>

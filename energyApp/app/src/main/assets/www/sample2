@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head><title> HellowWorld PhoneGap App </title>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript">
+         document.addEventListener("deviceready", onDeviceReady, false);
+         function onDeviceReady() {
+    alert("PhoneGap loaded");
+}
+
+    function myFunction(){
+    alert("Hello World!");
+    }
+
+    function alertBeep(){
+    navigator.notification.beep(5000);
+    }
+
+    function alertVibrate(){
+    navigator.notification.vibrate(5000);
+    }
+
+    function alertCallBack(){
+    }
+    function onDoConfirm(button){
+    alert("You selected button" + button);
+    }
+
+    function showAlert(){
+    navigator.notification.alert("Game Over", alertCallback, "Game Over", "Done");
+    }
+
+    function showConfirm(){
+    navigator.notification.confirm("Game Over", onDoConfirm, "Game Over", "Exit, Restart");
+    }
+    </script>
+</head>
+<body>
+<H1>Click a button</H1>
+<button onclick="myFunction()">NormalAlert</button>
+<br>
+<br>
+<button onclick="showAlert()">showAlert</button>
+<br>
+<br>
+<button onclick="showConfirm()">showConfirm</button>
+<br>
+<br>
+<button onclick="alertBeep()">Please Beep</button>
+<br>
+<br>
+<button onclick="alertVibrate()">Please Vibrate</button>
+
+
+</body>
+</html>

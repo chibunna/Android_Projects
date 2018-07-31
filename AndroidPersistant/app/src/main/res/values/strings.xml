@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="next_command_label">Next</string>
+    <string name="act_data_input_title">Enter your details:</string>
+    <string name="hello">Hello World, DataInput!</string>
+    <string name="app_name">Android_Persist_Filtering</string>
+	<string name="name_prompt">Name:</string>
+	<string name="DOB_prompt">Date Of Birth:</string>
+	<string name="email_prompt">Email:</string>
+	<string name="exit_command_label">Exit</string>
+	<string name="act_label">Android Persist3</string>
+	<string name="welcome_label">Welcome</string>
+	<string name="enter_label">Enter data</string>
+	<string name="list_records_label">List records</string>
+	<string name="delete_label">Delete all records</string>
+	<string name="List_of_records_title">List of Records</string>
+	<string name="home_command_label">Home</string>
+</resources>

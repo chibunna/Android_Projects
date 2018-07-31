@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Network Status Traker </title>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript">
+function onBodyLoad() {
+document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener("online", isOnline, false);
+document.addEventListener("offline", isOffline, false);
+}
+function onDeviceReady() {
+alert("name: " + device.name + "\n" +
+"cordova: " + device.cordova + "\n" +
+"platform: " + device.platform + "\n" +
+"uuid: " + device.uuid + "\n" +
+"version: " + device.version);
+
+//Get the networkInfo DOM element
+var element = document.getElementById('networkInfo');
+        element.innerHTML = "Ready <br />";}
+
+function isOnline() {
+var d = new Date();
+element = document.getElementById('networkInfo');
+element.innerHTML += "Online:" + d.toLocaleString() + "<br />";
+
+}
+
+function isOffline() {
+var d = new Date();
+element = document.getElementById('networkInfo');
+element.innerHTML += "Offline:" + d.toLocaleString() + "<br />";
+}
+
+
+
+</script>
+</head>
+<body onload="onBodyLoad()">
+<h1>Hello World</h1>
+<div class="networkInfo" id="networkInfo">
+
+</div>
+</body>
+</html>
